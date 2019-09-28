@@ -76,6 +76,7 @@
             }
             ?> 
             <div><a href="view.php?std_id=<?php echo $keyz; ?>">View</a> </div> 
+            <div><a href="update.php?std_id=<?php echo $keyz; ?>">Update</a> </div> 
             
             </li> <?php
         }
