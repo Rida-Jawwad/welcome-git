@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --white_color: white;
+}
+.body-index {
+    background-image: url('../images/index-bg.jpg');
+    background-size: cover;
+}
+h1{
+    font-size: 50px;
+    margin-top: 126px;
+    color: var(--white_color);
+    text-align: center;
+}
+label {
+    font-size: 29px;
+    color: var(--white_color);
+}
+input {
+    font-size: 23px;
+}
+.index-form {
+    margin-top: 40px;
+    text-align: center;
+}
+input[type="submit"] {
+    background-color: darkgrey;
+    padding: 4px 18px;
+    border-radius: 22px;
+    margin-top: 26px;
+}
+span{
+    margin-top: 35px;
+    color: #a21717;
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bolder
+}
+.body-todo{
+    background-color:#1c1554;
+}
+h2 {
+    text-align: center;
+    color: var(--white_color);
+    font-size: 37px;
+    margin-top: 45px;
+}
+.todo-form{
+    text-align: center;
+}
+li > div > p{
+    color: var(--white_color);
+    font-size: 24px;
+    margin: 0px 173px;
+}
+ul {
+    margin-top: 40px;
+}
+.fas{
+    color: var(--white_color);
+}
+.awe-div{
+    margin: 0px 173px;
+}
+.logout{
+    margin-top: 20px;
+    margin-left: 1140px;
+}
+.font-mag{
+    font-size: 35px;
+}
+.edit-form{
+    margin-top: 136px;
+}

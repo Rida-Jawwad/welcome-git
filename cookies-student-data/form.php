@@ -68,11 +68,6 @@
                ?>
                 <div><?php echo $value;?></div> 
                 <?php
-                // if($myArray['student_name'] == $_POST['student_name']){
-                //     $_POST['student_age'] = $myArray['student_age'];
-                //     $_POST['student_number'] = $myArray['student_number'];
-                // }
-                
             }
             ?> 
             <div><a href="view.php?std_id=<?php echo $keyz; ?>">View</a> </div> 

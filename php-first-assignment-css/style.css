@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    /* display: inline-block; */
+}
+body{
+    background-image: url(images/background.jpg);
+}
+.form-div {
+    width: 100%;
+}
+form.form-login {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 12px 0px;
+    margin: 50px auto;
+    text-align: center;
+    background: #00000091;
+    padding: 100px;
+}
+.div-form-1 , .div-form-2 {
+    padding: 12px 0px;
+    font-size: 20px;
+    color: white;
+}
+input.email-input {
+    margin-left: 37px;
+}
+.email-input , .password-input{
+    padding: 4px 13px;
+    margin-left: 0px;
+}
+.submit {
+    padding: 9px 121px;
+    color: white;
+    background: black;
+    border: none;
+    outline: none;
+    transition: ease 1s;
+    font-weight: bold;
+}
+input.submit:hover , .form-submit:hover , .button:hover , .logout:hover , .edit-submit-button:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: ease 1s;
+    font-weight: bold;
+}
+.login-submit {
+    margin-top: 61px;
+}
+.name-heading {
+    margin: 21px 56px;
+    font-size: 42px;
+    color: white;
+}
+.form-addtask {
+    margin: 6px;
+    font-size: 20px;
+}
+.form-label {
+    /* font-size: 30px; */
+    /* margin-top: 4px; */
+}
+.form-task {
+    padding: 4px;
+    margin-bottom: 3px;
+    outline: none;
+}
+.form-submit {
+    color: white;
+    padding: 6px 18px;
+    border: none;
+    background: black;
+    outline: none;
+}
+.li {
+    margin: 23px 56px;
+    list-style-type: circle;
+    color: white;
+    /* list-style-position: inside; */
+}
+.button {
+    background: black;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+    font-weight: 100;
+    transition: ease 1s;
+    font-weight: bold;
+}
+.para {
+    margin: 14px 0px;
+    font-size: 21px;
+    color: white;
+}
+.logout {
+    margin: 56px;
+    padding: 5px 15px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    transition: ease 1s;
+    font-weight: bold;
+}
+.edit-form {
+    width: 30%;
+    margin: 160px auto;
+    text-align: center;
+    background: #00000087;
+    padding: 100px;
+}
+.edit-text {
+    padding: 4px;
+    outline: none;
+}
+.edit-label {
+    color: white;
+    margin: 0px 5px;
+    font-size: 19px;
+    padding: 0px;
+}
+.edit-submit {
+    margin: 28px 0px 0px 0px;
+    transition: ease 1s;
+    font-weight: bold;
+}
+.edit-submit-button {
+    padding: 8px 98px;
+    background: black;
+    color: white;
+    border: none;
+}
+p.prepared-by {
+    background: #00000091;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+p.error {
+    color: wheat;
+}
+.task-main-div {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 12px 0px;
+    margin: 71px auto;
+    text-align: center;
+    background: #00000091;
+    padding: 50px;
+}
+.task-form-div {
+    padding: 12px 0px;
+    font-size: 20px;
+    color: white;
+}
