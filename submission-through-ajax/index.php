@@ -12,37 +12,6 @@
 <body>
 
 <?php
-    require('connection.php');
-    $error = false;
-
-    if(isset($_POST['login'])){
-
-        $userEmail = $_POST['email'];
-        $userPassword = $_POST['password'];
-
-        if(!empty(trim($userEmail)) && !empty(trim($userPassword))){
-
-            $selectQuery = "select id from useraccounts where email = '$userEmail' and password = '$userPassword' ";
-            $selectResult = mysqli_query($sqliConnection,$selectQuery);
-
-            if(mysqli_num_rows($selectResult)){
-
-                $userId = mysqli_fetch_assoc($selectResult);
-                $_SESSION['userId'] = $userId['id'];
-
-            }
-            else{
-                echo "Invalid email or password!";
-                $error = true;
-            }
-
-        }
-        else{
-            echo "Check all your fields";
-            $error = true;
-        }
-
-    }
 
     if(!isset($_SESSION['userId']) && empty($_SESSION['userId'])){
 
@@ -51,7 +20,7 @@
     <h1>Login Form</h1>
     <form method="post">
         <label for="email">Email</label>
-        <input type="email" name="email" value="<?php echo $error && isset($_POST['email']) ? $_POST['email'] : '' ?>" required>
+        <input type="email" name="email" value="<?php echo isset($error) && isset($_POST['email']) ? $_POST['email'] : '' ?>" required>
         <label for="password">Password</label>
         <input type="password" name="password" required>
         <input type="submit" value="Submit" name="login">
@@ -64,6 +33,33 @@
         header("Location: products.php");
     }
 ?>
-    
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script>
+
+    $('form').on('submit',function(e){
+
+        e.preventDefault();
+        formData = {};
+        $(this).find('input').each(function(){
+            formData[$(this).attr('name')] = $(this).val();
+        })
+
+        $.ajax({
+            url : 'indexAjax.php',
+            type : 'POST',
+            dataType : 'json',
+            cache : false,
+            data : formData,
+            success : function(response){
+                swal("",response.msg,response.status);
+                
+            }
+        })
+
+    })
+
+</script>
+
 </body>
 </html>

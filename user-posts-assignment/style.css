@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url('assets/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+}
+.index-main-div , .signup-main-div , .wall-main-div , .edit-main-div , .userProfile-main-div , .user-profile-edit-div {
+    width: 500px;
+    height: 340px;
+    margin: 100px auto;
+    text-align: center;
+    background: #00000040;
+    /* border: 2px solid; */
+    box-shadow: 0px 0px 0px 3px #353131;
+    padding: 55px;
+    box-sizing: border-box;
+}
+h1 {
+    /* margin-top: 40px; */
+    margin-bottom: 17px;
+}
+input:not([type='submit']) {
+    outline: none;
+    border: none;
+    height: 22px;
+    width: 170px;
+    margin: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+    background: #deded4;
+}
+.signup-main-div input[type="email"] {
+    margin-left: 33px;
+    margin-left: 96px;
+}
+input[type="submit"] {
+    margin-top: 10px;
+    height: 26px;
+    width: 66px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 7px;
+    transition: all 1s ease;
+    background: #deded4;
+    color: black;
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    transition: all 1s ease;
+    color: #deded4;
+    background: black;
+}
+input[type="email"] {
+    margin-left: 33px;
+}
+.signup-main-div {
+    padding: 30px;
+    height: 362px;
+}
+input[type="text"] {
+    margin-left: 92px;
+}
+.signup-main-div input[name="password"] {
+    margin-left: 66px;
+}
+input[type="number"] {
+    margin-left: 30px;
+}
+.wall-main-div {
+    width: 700px;
+    height: auto;
+    padding: 40px;
+}
+
+textarea {
+    width: 400px;
+    height: 115px;
+    outline: none;
+    border: none;
+    resize: none;
+    background: #deded4;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.wall-main-div label {
+    text-align: left;
+    margin-right: 273px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+td.postTd {
+    padding: 0px 27px;
+    text-align: left;
+    width: 400px;
+    margin-bottom: 16px;
+    display: inline-block;
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+.wall-main-div table {
+    margin: 0 auto;
+    margin-top: 26px;
+}
+td.actions {
+    /* display: inline-block; */
+    /* margin: 0px 6px; */
+    /* color: black; */
+    width: 50px;
+}
+a {
+    color: #deded4;
+    text-decoration: none;
+}
+.edit-main-div label {
+    text-align: left;
+    margin-right: 244px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.swal-button {
+    background-color: #deded4;
+    color: black;
+
+}
+.swal-button:not([disabled]):hover {
+    background-color: black;
+    color: #deded4;
+}
+.userProfile-main-div h1 {
+    /* margin-top: 40px; */
+    margin-bottom: 17px;
+    text-align: center;
+}
+/* .user-profile-edit-anchor-two{
+    margin-left: 120px;
+} */
+.userProfile-main-div {
+    text-align: left;
+}
+/* a.user-profile-edit-anchor-one {
+    margin-left: 170px;
+}
+
+a.user-profile-edit-anchor-three {
+    margin-left: 75px;
+} */
+.delete-user-account {
+    margin-top: 16px;
+}
+span.span {
+    font-weight: bold;
+}
+a.logout {
+    display: inline-block;
+    width: 73px;
+    text-align: center;
+    background: #deded4;
+    color: black;
+    height: 26px;
+
+    transition: all 1s ease;
+    /* margin: 0 auto; */
+}
+a.logout:hover{
+    transition: all 1s ease;
+    color: #deded4;
+    background: black;
+}
+.logout-div {
+    text-align: center;
+    margin-top: 29px;
+}
+.user-profile-edit-div input[type="text"] {
+    margin-left: 8px;
+}
+.user-profile-edit-div {
+    padding: 50px;
+    height: 267px;
+}
+.user-profile-edit-div input[type="submit"] {
+    margin-top: 25px;
+    /* display: inline-block; */
+}
+.icon-div {
+    text-align: left;
+    font-size: 34px;
+}
