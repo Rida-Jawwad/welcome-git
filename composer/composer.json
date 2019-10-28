@@ -1,0 +1,6 @@
+{
+    "name": "composer/index.php",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}

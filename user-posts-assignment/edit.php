@@ -48,7 +48,7 @@
                 }
                 else
                 {
-                    echo "Delete Error: ".mysqli_error($sqliConnection);
+                    echo "Edit Error: ".mysqli_error($sqliConnection);
                 }
 
             }

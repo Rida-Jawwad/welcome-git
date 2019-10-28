@@ -23,8 +23,8 @@
             
             $html .= "<td>".$fetchResultSet['id']."</td>";   
             $html .= "<td class='postTd'>".$fetchResultSet['post']."</td>";   
-            $html .= "<td class='actions'><a class='actions-anchor' href='edit.php?editPost=".$fetchResultSet['id']."'>Edit</a></td>";
-            $html .= "<td class='actions'><a class='actions-anchor' href='delete.php?deletePost=".$fetchResultSet['id']."'>Delete</a></td>";
+            $html .= "<td><a href='edit.php?editPost=".$fetchResultSet['id']."'>Edit</a></td>";
+            $html .= "<td><a href='delete.php?deletePost=".$fetchResultSet['id']."'>Delete</a></td>";
             
             $html .= "</tr>";
             echo $html;
