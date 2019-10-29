@@ -57,15 +57,19 @@ require ("connection.php") ;
     $num_rows = mysqli_num_rows($result_set);
 
     if($num_rows >= 1){
-        $fetchingRecord = mysqli_fetch_assoc($result_set);
-        $html = "<tr id='".$fetchingRecord['Id']."'  class='searchTr'>";
-        $html .= "<td><input type='checkbox' class='checkbox' name='id' value='".$fetchingRecord['Id']."'></td>";
-        $html .= "<td>".$fetchingRecord['First_name']."</td>";
-        $html .= "<td>".$fetchingRecord['Last_name']."</td>";
-        $html .= "<td>".$fetchingRecord['Age']."</td>";
-        $html .= "<td>".$fetchingRecord['Email']."</td>";
-        $html .= "<td><a href='edit.php?editPost=".$fetchingRecord['Id']."'>Edit</a></td>";
-        $html .= "</tr>";
+        $fetchingRecord = mysqli_fetch_all($result_set,MYSQLI_ASSOC);
+        $html = "";
+        
+        foreach ($fetchingRecord as $value) {
+            $html .= "<tr id='".$value['Id']."'  class='searchTr'>";
+            $html .= "<td><input type='checkbox' class='checkbox' name='id' value='".$value['Id']."'></td>";
+            $html .= "<td>".$value['First_name']."</td>";
+            $html .= "<td>".$value['Last_name']."</td>";
+            $html .= "<td>".$value['Age']."</td>";
+            $html .= "<td>".$value['Email']."</td>";
+            $html .= "<td><a href='edit.php?editPost=".$value['Id']."'>Edit</a></td>";
+            $html .= "</tr>";
+        }
         echo $html;
     }
 
