@@ -13,6 +13,9 @@ include_once('head.php');
             <li>
                 <a href="<?php echo site_url('Contact_us') ?>">Contact us</a>
             </li>
+            <li>
+                <a href="<?php echo site_url('User') ?>">Users</a>
+            </li>
         </ul>
     </nav>
 </header>
