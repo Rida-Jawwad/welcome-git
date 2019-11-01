@@ -5,13 +5,13 @@ include_once('head.php');
     <nav>
         <ul>
             <li>
-                <a href="Home">Home</a>
+                <a href="<?php echo site_url('Home') ?>">Home</a>
             </li>
             <li>
-                <a href="./About_us">About_us</a>
+                <a href="<?php echo site_url('About_us') ?>">About us</a>
             </li>
             <li>
-                <a href="./Contact_us">Contact_us</a>
+                <a href="<?php echo site_url('Contact_us') ?>">Contact us</a>
             </li>
         </ul>
     </nav>
